@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.herosection1{
+    background-color: rgba(29, 34, 35, 0.771);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    background-color: blueviolet;
+    width: 70vw;
+    height: 70vh;
+    border-radius: 10px;
+}
+.box1 h1{
+    color: white;
+    text-align: center;
+    padding: 3vh;
+}
+.textbox1{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+.textbox1 h3{
+    color: aliceblue;
+    font-size: clamp(10px, 8vw, 100px);
+}
+.textbox1 h2{
+    color: white;
+    font-size: clamp(2px, 4vw, 30px);
+}
+/* .btnbox1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    padding: 10vh;
+}
+.project_tesla{
+    width: 6vw;
+    height: 5vh;
+    background-color: red;
+    border-radius: 5px;
+}
+.project_tesla a button{
+    width: 6vw;
+    height: 5vh;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.project_blossom_heaven{
+    width: 10vw;
+    height: 5vh;
+    background-color: red;
+    border-radius: 5px;
+}
+.project_blossom_heaven a button{
+    width: 10vw;
+    height: 5vh;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.project_netflix{
+    width: 6vw;
+    height: 5vh;
+    background-color: red;
+    border-radius: 5px;
+}
+.project_netflix a button{
+    width: 6vw;
+    height: 5vh;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    color: white;
+} */

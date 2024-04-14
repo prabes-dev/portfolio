@@ -1,0 +1,336 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x:hidden;
+}
+hr{
+    color: white;
+}
+.main{
+    width: 100vw;
+}
+.navbar{
+    background-color: blueviolet;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 35vw;
+}
+.logo a{
+    background-color:rebeccapurple;
+    min-width: 8vw;
+    height: 5vh;
+    border-radius: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.3vw;
+    text-decoration: none;
+}
+.logo  a img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.logo a h1{
+    font-size: 1.4vw;
+    color: white;
+}
+.options{
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+    align-items: center;
+}
+.options a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.home_btn{
+    background-color: rgba(102, 51, 153, 0.482);
+    width: 4vw;
+    height: 3.5vh;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.214);
+    border-radius: 5px;
+}
+.aboutme_btn{
+    background-color: rgba(102, 51, 153, 0.482);
+    width: 5.5vw;
+    height: 3.5vh;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.214);
+    border-radius: 5px;
+}
+.contactme_btn{
+    background-color: rgba(102, 51, 153, 0.482);
+    width: 6vw;
+    height: 3.5vh;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.214);
+    border-radius: 5px;
+}
+.herosection1{
+    background-color: rgba(29, 34, 35, 0.771);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    background-color: blueviolet;
+    width: 70vw;
+    height: 70vh;
+    border-radius: 10px;
+}
+.box1 h1{
+    color: white;
+    text-align: center;
+}
+.textbox1{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+.textbox1 h3{
+    color: aliceblue;
+    font-size: clamp(10px, 8vw, 100px);
+}
+.textbox1 h2{
+    color: white;
+    font-size: clamp(2px, 4vw, 30px);
+}
+.btnbox1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 10vh;
+}
+.btnbox1 a{
+    text-decoration: none;
+}
+.btn1{
+    background-color: rebeccapurple;
+    height: 5vh;
+    width: 7vw;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn2{
+    background-color: rebeccapurple;
+    height: 5vh;
+    width: 7vw;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.herosection2{
+    width: 100vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+}
+.textbox3{
+    background-color:blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    padding: 1vh;
+
+}
+.textbox3 h1{
+    background-color: blueviolet;
+    color: white;
+    font-size: 30px;
+}
+.aboutbox{
+    display: flex;
+    background-color:blueviolet;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 45vh;
+}
+.imagebox{
+    border-radius: 50%;
+    height: 34.8vh;
+    width: 17vw;
+    border: 2px solid rgba(18, 18, 18, 0.648);
+}
+.imagebox img{
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 16/16;
+}
+.textbox2{
+    width: 50vw;
+    height: 40vh;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+}
+.textbox2 h1{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.herosection3{
+    width: 100vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+}
+.textbox4{
+    background-color: blueviolet;
+    height: 10vh;
+    padding: 2vh;
+}
+.textbox4 h1{
+    text-align: center;
+    color: white;
+}
+.box2{
+    height: 45vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(137, 43, 226);
+}
+.box2_box1{
+    width: 30vw;
+    height: 38vh;
+    background-color:rebeccapurple;
+    border-radius: 10px;
+}
+.box2_box1 h1{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.box2_box2{
+    width: 30vw;
+    height: 38vh;
+    background-color:rebeccapurple;
+    border-radius: 10px;
+
+}
+.box2_box2 h1{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.herosection4{
+    width: 100vw;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+.textbox5{
+    background-color: blueviolet;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textbox5 h1{
+    color: white;
+}
+.project_box{
+    width: 100vw;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    align-items: center;
+}
+.project1{
+    height: 50vh;
+    width: 80vw;
+    background-color:rebeccapurple;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.629);
+}
+.project2{
+    height: 50vh;
+    width: 80vw;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.629);
+}
+
+.project3{
+    height: 50vh;
+    width: 80vw;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.629);
+}
+.project4{
+    height: 50vh;
+    width: 80vw;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.629);
+}
+.project5{
+    height: 50vh;
+    width: 80vw;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.629);
+}
+.herosection5{
+    background-color: rgb(137, 43, 226);
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.endbar{
+    width: 95vw;
+    height: 40vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rebeccapurple;
+}
+
+/* comming soon....... */
+.project1 h1{
+    color: white;
+    text-align: center;
+}
+.project2 h1{
+    color: white;
+    text-align: center;
+}
+.project3 h1{
+    color: white;
+    text-align: center;
+}
+.project4 h1{
+    color: white;
+    text-align: center;
+}
+.project5 h1{
+    color: white;
+    text-align: center;
+}

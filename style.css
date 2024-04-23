@@ -1,0 +1,683 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x:hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    --screen-width:100vw;
+    --screen-height:100vh;
+    --herocontent-margin-top:6vh;
+    --midnight-blue: #101720;
+    --deep-navy-blue:#011222;
+    --charcoal-grey:#171717;
+    --rich-black:#020D19;
+    --obsidian:#0B1215;
+    --snow:#FFFAFA;
+    --ghost-white:#F8F8FF;
+    --alice-blue:#F0F8FF;
+    --gainsboro:#F1EFF2;
+    --off-white:#FBFBFB;
+    --hex-colour:#27aae1;
+    --primary_colour:#011222f0;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.main{
+    width: var(--screen-width);
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: var(--screen-width);
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 35vw;
+    box-shadow: 1px 2px 6px lightblue;
+    z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.logo a{
+    min-width: 8vw;
+    height: 5vh;
+    border-radius: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.3vw;
+    text-decoration: none;
+    background: #53b2ca;
+    box-shadow: inset 27px 27px 21px #4797ac,inset -27px -27px 21px #5fcde8;
+}
+.logo  a img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.logo a h1{
+    font-size: 1.4vw;
+    color: white;
+}
+.options{
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+    align-items: center;
+}
+.options a{
+    text-decoration: none;
+    color: aliceblue;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+.options a:hover{
+    color: red;
+    transition: all 200ms;
+}
+
+.herosection1{
+    width: var(--screen-width);
+    height: var(--screen-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/background-2462431_1280.jpg) no-repeat center ;
+    background-size: cover;
+}
+.herocontent{
+    width: 86vw;
+    height: 75vh;
+    /* background-color: rgba(255, 0, 0, 0.327); */
+    margin-top: var(--herocontent-margin-top);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.textbox1{
+    /* background-color: #0000ff5b; */
+    width: 48vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+.textbox1_text1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+.textbox1_text1 h1{
+    /* background-color: rebeccapurple; */
+    color: white;
+    font-size: 3vw;
+}
+.textbox1_text1 h2{
+    /* background-color: #53b2ca; */
+    color: #011222f0;
+    font-size: 1vw;
+    text-align: center;
+}
+.btnbox{
+    /* background-color: #0000FF; */
+    display: flex;
+    gap: 2vw;
+}
+.btnbox a{
+    text-decoration: none;
+}
+.btnbox a input{
+    height: 4vh;
+    width: 6vw;
+    background-color: #011222f0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.imagebox2{
+    background: url(./images/wallpaperflare.com_wallpaper\ \(1\).jpg) no-repeat center;
+    background-size: cover;
+    width: 30vw;
+    height: 60vh;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+.imagebox2_image{
+    width: 30vw;
+    height: 60vh;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    background-color: red;
+    transition: all 0.8s ease;
+    /* background: url() no-repeat center; */
+    /* background-size: cover; */
+}
+.imagebox2_image:hover{
+    transform: rotateY(90deg);
+
+}
+.herosection2{
+    width: var(--screen-width);
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+}
+.textbox3{
+    background-color:#011222f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    padding: 1vh;
+
+}
+.textbox3 h1{
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+}
+.aboutbox{
+    display: flex;
+    background-color:#011222f0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 45vh;
+}
+.imagebox{
+    border-radius: 50%;
+    height: 34.8vh;
+    width: 17vw;
+    border: 2px solid rgba(18, 18, 18, 0.648);
+}
+.imagebox img{
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 16/16;
+}
+.textbox2{
+    width: 50vw;
+    height: 40vh;
+    background-color: #F0F8FF;
+    border-radius: 10px;
+}
+.textbox2 h1{
+    color: rgb(14, 13, 13);
+    font-size: 20px;
+    text-align: center;
+}
+.herosection3{
+    width: var(--screen-width);
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+}
+.textbox4{
+    background-color:#011222f0;
+    height: 10vh;
+    padding: 2vh;
+}
+.textbox4 h1{
+    text-align: center;
+    color: white;
+}
+.box2{
+    height: 45vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#011222f0 ;
+}
+.box2_box1{
+    width: 30vw;
+    height: 38vh;
+    background-color:#F0F8FF;
+    border-radius: 10px;
+}
+.box2_box1 h1{
+    color: rgb(14, 13, 13);
+    font-size: 20px;
+    text-align: center;
+}
+.box2_box2{
+    width: 30vw;
+    height: 38vh;
+    background-color:#F0F8FF;
+    border-radius: 10px;
+
+}
+.box2_box2 h1{
+    color: rgb(11, 11, 11);
+    font-size: 20px;
+    text-align: center;
+}
+.herosection4{
+    width: var(--screen-width);
+    background-color: #011222f0;
+    display: flex;
+    flex-direction: column;
+}
+.textbox5{
+    background-color: #011222f0;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textbox5 h1{
+    color: white;
+}
+.project_box{
+    width: 100vw;
+    background-color: #011222f0;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    align-items: center;
+}
+.project1{
+    height: 50vh;
+    width: 80vw;
+    background-color:#F0F8FF;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.629);
+}
+.project2{
+    height: 50vh;
+    width: 80vw;
+    background-color:#F0F8FF;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.629);
+}
+
+.project3{
+    height: 50vh;
+    width: 80vw;
+    background-color: #F0F8FF;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.629);
+}
+.project4{
+    height: 50vh;
+    width: 80vw;
+    background-color: #F0F8FF;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.629);
+}
+.project5{
+    height: 50vh;
+    width: 80vw;
+    background-color: #F0F8FF;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.629);
+}
+.footer{
+    background-color: #011222f0;
+    width: var(--screen-width);
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-top: 2px solid rgba(255, 255, 255, 0.715);
+}
+.footer-box1{
+    width: var(--screen-width);
+    height: 10vh;
+    background-color:var(--primary_colour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 43vw;
+}
+.footer_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+}
+.logobox{
+    width: 4vw;
+    height: 6vh;
+}
+.footer_logo h1{
+    font-size: 1.5vw;
+}
+
+
+.footer_quote{
+    color: white;
+}
+.footer_quote h1{
+    font-size: 1.2vw;
+}
+.footer_quote h2{
+    font-size: 1vw;
+    text-align: right;
+}
+
+
+
+
+
+.footer-box2{
+    width: var(--screen-width);
+    height: 15vh;
+    background-color: var(--primary_colour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40vw;
+}
+.footer_email{
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgba(255, 0, 0, 0.364); */
+}
+.footer_email h1{
+    font-size: 1.4vw;
+}
+.footer_emailbox{
+    height: 6vh;
+}
+.inputbox{
+    height: 5vh;
+    width: 20vw;
+    background-color: var(--gainsboro);
+    border-radius: 5px;
+    border: none;
+    padding-left: 2vw;
+}
+.inputbox:focus{
+    outline: none;
+}
+.inputbox:hover{
+    background-color: var(--primary_colour);
+    color: var(--gainsboro);
+    border: 2px solid var(--gainsboro);
+}
+::placeholder{
+    color: var(--primary_colour);
+}
+.inputbtn{
+    height: 5vh;
+    width: 5vw;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--gainsboro);
+}
+.inputbtn:hover{
+    background-color: var(--primary_colour);
+    color: var(--gainsboro);
+    border: 2px solid var(--gainsboro);
+}
+.footer_checkbox{
+    display: flex;
+}
+.footer_checkbox h1{
+    font-size: 1vw;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer_github{
+    display: flex;
+    flex-direction: column;
+}
+.footer_github h1{
+    font-size: 1.5vw;
+}
+.footer_github_box{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    background-color: var(--gainsboro);
+    border-radius: 5px;
+    padding: 0.2vw;
+}
+.github_logo{
+    width: 3vw;
+    height: 6vh;
+    overflow: hidden;
+}
+.github_logo i{
+    font-size: 3rem;
+    color: var(--primary_colour);
+}
+.github_text{
+    color: var(--primary_colour);
+}
+.github_text h1{
+    font-size: 1.5vw;
+}
+.github_text h2{
+    font-size: 1.2vw;
+}
+
+
+
+.footer-box3{
+    width: var(--screen-width);
+    height: 15vh;
+    background-color: var(--primary_colour);
+    display: flex;
+    flex-direction: column;
+}
+.footer_text1{
+    width: var(--screen-width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_text1 h1{
+    color: white;
+    font-size: 2vw;
+}
+.footer_icons{
+    /* background-color: rgba(255, 0, 0, 0.221); */
+    width: var(--screen-width);
+    height: 10vh;
+    display: flex;
+    gap: 2vw;
+    font-size: 3rem;
+    padding: 0vh 38vw;
+}
+.footer_icons a{
+    text-decoration: none;
+    color: white;
+}
+.footer_icons a i{
+    height: 8vh;
+}
+.footer-box4{
+    width: var(--screen-width);
+    height: 5vh;
+    background-color: var(--primary_colour);
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    font-size: 0.4vw;
+    border-top: 1px solid rgba(255, 255, 255, 0.378);
+}
+
+/* comming soon....... */
+.project1 h1{
+    color: rgb(10, 10, 10);
+    text-align: center;
+}
+.project2 h1{
+    color: rgb(12, 12, 12);
+    text-align: center;
+}
+.project3 h1{
+    color: rgb(14, 14, 14);
+    text-align: center;
+}
+.project4 h1{
+    color: rgb(4, 4, 4);
+    text-align: center;
+}
+.project5 h1{
+    color: rgb(7, 7, 7);
+    text-align: center;
+}
+
+
+/* for scroll stuff */
+.scroll-down .navbar{
+    transform: translateY(-100%);
+    box-shadow: none;
+}
+.scroll-up .navbar{
+    transform: translateY(0);
+}
+.navbar {
+    transition: transform 0.3s ease;
+  }
+
+
+
+
+  /* Styles for tablets */
+@media (max-width: 992px) {
+    /* Tablet-specific styles go here */
+    .navbar {
+      gap: 20vw;
+    }
+  
+    .options {
+      gap: 2vw;
+    }
+  
+    .herocontent {
+      flex-direction: column;
+      gap: 3vh;
+    }
+  
+    .textbox1 {
+      width: 80vw;
+    }
+  
+    .imagebox2 {
+      width: 60vw;
+      height: 40vh;
+    }
+  
+    .aboutbox {
+      flex-direction: column;
+      gap: 2vh;
+    }
+  
+    .textbox2 {
+      width: 80vw;
+    }
+  
+    .footer-box2 {
+      gap: 10vw;
+    }
+  
+    .footer_github_box {
+      flex-direction: column;
+      gap: 1vh;
+    }
+  }
+  
+  /* Styles for phones */
+  @media (max-width: 768px) {
+    /* Phone-specific styles go here */
+    .navbar {
+      gap: 10vw;
+      height: 10vh;
+    }
+  
+    .options {
+      gap: 1vw;
+      font-size: 0.8rem;
+    }
+  
+    .textbox1_text1 h1 {
+      font-size: 4vw;
+    }
+  
+    .textbox1_text1 h2 {
+      font-size: 2vw;
+    }
+  
+    .btnbox {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .btnbox a input {
+      width: 20vw;
+    }
+  
+    .imagebox2 {
+      width: 80vw;
+      height: 30vh;
+    }
+  
+    .imagebox {
+      width: 30vw;
+    }
+  
+    .textbox2 {
+      height: 30vh;
+    }
+  
+    .footer-box1 {
+      gap: 10vw;
+    }
+  
+    .footer-box2 {
+      flex-direction: column;
+      gap: 2vh;
+      height: 25vh;
+    }
+  
+    .footer_emailbox {
+      flex-direction: column;
+      align-items: center;
+      gap: 1vh;
+    }
+  
+    .inputbox {
+      width: 40vw;
+    }
+  
+    .inputbtn {
+      width: 20vw;
+    }
+  
+    .footer-box3 {
+      height: 20vh;
+    }
+  
+    .footer_icons {
+      padding: 0 20vw;
+    }
+  }
